@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.bstek</groupId>
+	<groupId>com.bstek.urule</groupId>
 	<artifactId>urule-springboot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
@@ -54,4 +54,23 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>bsdn-maven-repository</id>
+			<url>http://nexus.bsdn.org/content/groups/public/</url>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>dorado-releases</id>
+			<name>Dorado Releases Repository</name>
+			<url>http://nexus.bsdn.org/content/repositories/dorado_releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>dorado-snapshots</id>
+			<name>Dorado Snapshots Repository</name>
+			<url>http://nexus.bsdn.org/content/repositories/dorado_snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
